@@ -1,0 +1,52 @@
+body {
+  size-adjust:initial;  
+  margin: 0;
+  background:linear-gradient(to right,white, black);
+}
+.head {
+  background-color: sienna;
+  padding: 1rem;
+  border-radius: 10px 0;
+  font-family: "Times New Roman", Times, serif;
+  justify-content: flex-start;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.titulos1 {
+  display: flex;
+  gap: 2rem;
+  color: white;
+}
+#titulos2 {
+  text-align: right;
+  margin-left: auto;
+  color: white;
+}
+.conjunto {
+  margin-top: 2rem;
+  display: flex;
+  align-items: self-start;
+  text-align: justify;
+  flex-wrap: wrap;
+  gap: 2rem 1rem;
+  justify-content: space-around;
+}
+.box {
+  background-color: darkgrey;
+  border-radius: 10px;
+  padding: 2rem;
+  gap: 2rem;
+  display: flex;
+  box-shadow: 5px 5px gray;
+  width: 45%;
+}
+@media (max-width: 768px) {
+  header {
+      flex-direction: column; /* Altera a direção do cabeçalho para coluna em telas menores */
+      text-align: center; /* Centraliza o texto do cabeçalho em telas menores */
+  }
+  body{
+   max-width: 100%;
+   text-align: center;
+  }
+}
